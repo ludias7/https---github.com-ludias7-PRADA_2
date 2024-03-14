@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: rgb(190, 190, 190);
+    color: white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 55px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Cinzel;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    font-family: Cinzel;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: rgb(139, 139, 139);
+}
+
+.home{
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60%;
+}
+
+.home-content{
+    max-width: 0px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: Cinzel;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(216, 216, 216);
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-family: Cinzel;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(54, 54, 54);
+    border: 2px solid rgb(73, 72, 73);
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: rgb(63, 62, 63);
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: rgb(49, 49, 49);
+}
+
+.btn-box a:nth-child(2):hover{
+    color: black;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: rgb(154, 153, 155);
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+#secao-apresentacao img{
+    display: flex;
+    align-items: center;
+    padding: 13%;
+    gap: 15rem;
+    height: 70vh;
+}
+
+#secao-apresentacao img{
+    border-radius: 40%;
+}
+
+#texto-apresentacao {
+    color: #000000;
+}
+
+#texto-apresentacao {
+    font-size: 1.25rem;
+}
